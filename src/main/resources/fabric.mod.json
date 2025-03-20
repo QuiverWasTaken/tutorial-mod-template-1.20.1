@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "welcome to costco, i love you",
+	"authors": [
+		"Quiver"
+	],
+	"contact": {
+		"homepage": "N/A",
+		"sources": "N/A"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.quiver.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.quiver.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.quiver.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
