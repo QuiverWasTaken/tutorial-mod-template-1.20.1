@@ -2,6 +2,7 @@ package net.quiver.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.quiver.tutorialmod.block.ModBlocks;
 import net.quiver.tutorialmod.item.ModItemGroups;
 import net.quiver.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -16,5 +17,6 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
